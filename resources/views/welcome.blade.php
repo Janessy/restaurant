@@ -12,6 +12,17 @@
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="fonts/style.css">  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                touch: true,
+                pauseOnAction: false,
+                pauseOnHover: false,
+            });
+        });
+</script>
     </head>
     <body>
         <!-- Menu -->
@@ -35,108 +46,129 @@
                 </div>
             </div>
         </header>
-        <!-- Slider -->
-        <section id="banner">
-            <div class="item">
-                <ul>
-                    <li><img src="img/bebidas.jpg" alt=""></li> 
-                    <li><img src="img/exterior.jpg" alt=""></li>  
-                    <li><img src="img/ambiente.jpg" alt=""></li>  
-                    <li><img src="img/reunion.jpg" alt=""></li>
-                </ul>
-            </div>
-            <div class="canvas">
-                <h1>PLATOS TIPICOS DE LA REGIÓN JUNÍN</h1>
-                <a href="#">Explora el Menú</a>
-            </div>
-        </section>
+        <!-- Slider-->
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="img/bebidas.jpg" />
+                    <section class="flex-caption">
+                        <p>VARIEDAD DE BEBIDAS</p>
+                    </section>
+                </li>
+                <li>
+                    <img src="img/ambiente.jpg" />
+                    <section class="flex-caption">
+                        <p>AMBIENTE</br>CÓMODO</p>
+                    </section>
+                </li>
+                <li>
+                    <img src="img/trucha.jpg" />
+                    <section class="flex-caption">
+                        <p>PRUEBA NUESTROS </br>DELICIOSOS PLATOS</p>
+                    </section>
+                </li>
+                <li>
+                    <img src="img/reunion.jpg" />
+                    <section class="flex-caption">
+                        <p>NUESTROS INTERIORES</p>
+                    </section>
+                </li>
+            </ul>
+        </div>
         <!-- Carta-->
 		<section id="carta">
-            <h2>Comidas destacadas</h2>
-            <div>
-                <div class="card">
-                    <img src="img/trucha.jpg" alt="">
+            <h2>Nuestras Especialidades</h2>
+            <div id="info">
+                <article class="card">
+                    <img src="img/trucha2.jpg" alt="">
                     <div>
                         <h4><a href="#">Trucha</a></h4>
                         <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
                         <span>S/. 15</span>
                     </div>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <img src="img/chicharron.jpg" alt="">
                     <div>
                         <h4><a href="#">Chicharron</a></h4>
                         <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
                         <span>S/. 15</span>
                     </div>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <img src="img/Cuy.jpg" alt="">	
                     <div>
                         <h4><a href="#">Cuy</a></h4>
                         <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
                         <span>S/. 15</span>
                     </div>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <img src="img/ceviche.jpg" alt="">
                     <div>
                         <h4><a href="#">Pachamanca</a></h4>
                         <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
                         <span>S/. 15</span>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
         <!-- Reservas -->
-        <h2>Reservas</h2>
-        <div>
-            <label for="name">Nombre y Apellido</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Correo Electronico</label>
-            <input type="email">
-            <label for="phone">Telefono</label>
-            <input type="text">
-            <label for="date">Fecha de Reserva</label>
-            <input type="date" name="" id="">
-            <label for="time">Hora de Reserva</label>
-            <input type="time" name="" id="">
-            <label for="cant">Cantidad de Personas</label>
-            <input type="number">
-            <button>RESERVAR</button>
-        </div>
+        <section id="reserva">
+            <h2>Reservas</h2>
+            <form action="">
+                <section class="datos">
+                    <label for="name">Nombres y Apellidos:</label>
+                    <input type="text" id="name" name="name" placeholder="Nombres y Apellidos">
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" name="email" placeholder="Correo Electrónico">
+                    <label for="phone">Telefono:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Telefono">
+                    <div class="rev">
+                        <div>
+                            <label for="date-rev">Fecha de Reserva:</label>
+                            <input type="date" name="date-rev" id="date-rev">
+                        </div>
+                        <div>
+                            <label for="time">Hora de Reserva:</label>
+                            <input type="time" name="time" id="time">
+                        </div>
+                    </div>
+                    <label for="cant">Cantidad de Personas:</label>
+                    <input type="number" id="cant" name="cant">
+                </div>
+                <button type="submit" id="boton">RESERVAR</button>
+            </form>
+        </section>
         <!-- Pie de pagina-->
-        <footer class="site__social">
-        <div class="contact">
-                <h4>
-                    Contactenos
-                </h4>
-                <section class="form">
-                    <ul>
-                        <li>
-                            <span><i class="icono-footer fa fa-map-marker" aria-hidden="true"></i>
-                                    Los Geranios 190 - El Tambo - Huancayo - Junín
-                            </span>
-                        </li>
-                        <li>
-                            <span><i class="icono-footer fa fa-envelope" aria-hidden="true"></i>
-                                    elconquistador@hotmail.com
-                            </span>
-                        </li>
-                        <li>
-                            <span><i class="icono-footer fa fa-phone" aria-hidden="true"></i>
-                                    (064)261167
-                            </span>                            
-                        </li> 
-                    </ul>     
-                </section>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1050.428819512412!2d-75.23900649327695!3d-12.034998217176872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2spe!4v1506828544383" frameborder="0" allowfullscreen>
-                </iframe>
-            </div>
+        <footer>
+            <h4>
+                Contactenos
+            </h4>
+            <section class="contact">
+                <ul>
+                    <li>
+                        <span><i class="icono-footer fa fa-map-marker" aria-hidden="true"></i>
+                                Los Geranios 190 - El Tambo - Huancayo - Junín
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="icono-footer fa fa-envelope" aria-hidden="true"></i>
+                                elconquistador@mail.com
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="icono-footer fa fa-phone" aria-hidden="true"></i>
+                                (064)261167
+                        </span>                            
+                    </li> 
+                </ul>     
+            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1050.428819512412!2d-75.23900649327695!3d-12.034998217176872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2spe!4v1506828544383" frameborder="0" allowfullscreen>
+            </iframe>
             <div class="container">
                 <div class="row center-sm">
-                    <p class="site__colophon col--sm-12">©ElConquistador</p>
-                    <p class="site__credit col--sm-12">Diseñado por Restaurant Engine</a></p>
+                    <p>©ElConquistador</p>
                 </div>
             </div>
         </footer>
