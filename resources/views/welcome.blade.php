@@ -50,126 +50,40 @@
                 <a href="#">Explora el Menú</a>
             </div>
         </section>
-        <!-- Platos de la carta-->
+        <!-- Carta-->
 		<section id="carta">
             <h2>Comidas destacadas</h2>
             <div>
-                <div>
-                    <a href="#">
-                        <img src="img/ceviche.jpg" alt="">						
-                    </a>
+                <div class="card">
+                    <img src="img/trucha.jpg" alt="">
                     <div>
-                        <h4>
-                            <a href="#">
-                                Ceviche de Trucha
-                            </a>
-                        </h4>
-                        <div>
-                            <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
-                        </div>
-                        <div>
-                            <span>$ 7.99</span>
-                        </div>
+                        <h4><a href="#">Trucha</a></h4>
+                        <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
+                        <span>S/. 15</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#">
-                        <img src="img/ceviche.jpg" alt="">						
-                    </a>
+                <div class="card">
+                    <img src="img/chicharron.jpg" alt="">
                     <div>
-                        <h4>
-                            <a href="#">
-                                Ceviche de Trucha
-                            </a>
-                        </h4>
-                        <div>
-                            <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
-                        </div>
-                        <div>
-                            <span>$ 7.99</span>
-                        </div>
+                        <h4><a href="#">Chicharron</a></h4>
+                        <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
+                        <span>S/. 15</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#">
-                        <img src="img/ceviche.jpg" alt="">						
-                    </a>
+                <div class="card">
+                    <img src="img/Cuy.jpg" alt="">	
                     <div>
-                        <h4>
-                            <a href="#">
-                                Ceviche de Trucha
-                            </a>
-                        </h4>
-                        <div>
-                            <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
-                        </div>
-                        <div>
-                            <span>$ 7.99</span>
-                        </div>
+                        <h4><a href="#">Cuy</a></h4>
+                        <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
+                        <span>S/. 15</span>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#">
-                        <img src="img/ceviche.jpg" alt="">						
-                    </a>
+                <div class="card">
+                    <img src="img/ceviche.jpg" alt="">
                     <div>
-                        <h4>
-                            <a href="#">
-                                Ceviche de Trucha
-                            </a>
-                        </h4>
-                        <div>
-                            <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
-                        </div>
-                        <div>
-                            <span>$ 7.99</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#">
-                        <img src="img/ceviche.jpg" alt="">						
-                    </a>
-                    <div>
-                        <h4>
-                            <a href="#">
-                                Ceviche de Trucha
-                            </a>
-                        </h4>
-                        <div>
-                            <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
-                        </div>
-                        <div>
-                            <span>$ 7.99</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="#">
-                        <img src="img/ceviche.jpg" alt="">						
-                    </a>
-                    <div>
-                        <h4>
-                            <a href="#">
-                                Ceviche de Trucha
-                            </a>
-                        </h4>
-                        <div>
-                            <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
-                        </div>
-                        <div>
-                            <span>$ 7.99</span>
-                        </div>
+                        <h4><a href="#">Pachamanca</a></h4>
+                        <p>Eius explicabo facere a corporis aut optio ipsa facilis omnis nulla.</p>
+                        <span>S/. 15</span>
                     </div>
                 </div>
             </div>
@@ -178,15 +92,15 @@
         <h2>Reservas</h2>
         <div>
             <label for="name">Nombre y Apellido</label>
-            <input type="text" id="name" name="name"></br>
+            <input type="text" id="name" name="name">
             <label for="email">Correo Electronico</label>
-            <input type="email"></br>
+            <input type="email">
             <label for="phone">Telefono</label>
-            <input type="text"></br>
+            <input type="text">
             <label for="date">Fecha de Reserva</label>
-            <input type="date" name="" id=""></br>
+            <input type="date" name="" id="">
             <label for="time">Hora de Reserva</label>
-            <input type="time" name="" id=""></br>
+            <input type="time" name="" id="">
             <label for="cant">Cantidad de Personas</label>
             <input type="number">
             <button>RESERVAR</button>
